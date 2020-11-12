@@ -48,19 +48,20 @@
 			font-family: Arial;
 			font-size: 14pt;
 			color: white;
-			position:relative;
-			left:11px;
+			position:absolute;
+			left: 20px;
 			height: 140px;
+			width: 240px;
 		}
 		
 		fieldset#campo2 {
+			position: absolute;
 			font-family: Arial;
 			font-size: 14pt;
 			color: white;
-			position:absolute;
-			left:0px;
-			top: 190px;
-			height: 160px;
+			left: -2px;
+			top: 170px;
+			height: 170px;
 			width: 240px;
 			
 		}
@@ -71,7 +72,7 @@
 		}
 		img#scqi{
 			position: absolute;
-			top:165px;
+			top:145px;
 			left:400px;
 			opacity:0.9;
 		}
@@ -81,8 +82,8 @@
 		}
 			
 		p#conjuntocaixa{
-		position:relative;
-		width: 70%;
+		position:absolute;
+		width: 70px;
 		height:70px;
 		top:151px;
 		left:25%;
@@ -110,17 +111,16 @@
 		
 		
 		
-		}
 				
 		input#cVolp{
 		position: absolute;
-		width: 50%;
-		height:100%;
+		width: 120px;
+		height:20px;
 		}
 		input#cConcp{
 		position: absolute;
-		width: 50%;
-		height:100%;
+		width: 129px;
+		height:20px;
 		}
 		
 		input#botaoc{
@@ -189,27 +189,15 @@
 		top: 15px;
 		}
 		
-		div#divo{
-		font-family: Arial;
-			font-size: 12pt;
-			color: #ed1a20;
-			position:absolute;
-			left:0px;
-			top: 200px;
-			height: 61px;
-			width: 700px;
-			background-color:#fff432;
-			line-height:59px;
-			
-		}
+		
 		
 		input#oi{
 		font-family: Verdana;
 			font-size: 11pt;
 			color: white;
-			position:absolute;
+			position: absolute;
 			left:0px;
-			top: 200px;
+			top: 220px;
 			height: 55px;
 			width: 900px;
 			background-color:#f29d12;
@@ -268,14 +256,22 @@
 		
 		div#fundo{
 		position: absolute;
-		top:
 		width: 314px;
 		height: 358px;
-		top: 165px;
+		top: 145px;
 		left:400px;
 		background-color: orange;
 		color: orange;
+		}
 		
+		input#idade{
+		width: 120px;
+		height:20px;
+		}
+		
+		input#kh{
+		width: 120px;
+		height:20px;
 		}
 		
 	</style>
@@ -329,21 +325,21 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 			<br>
 			
 			
-		<input id="botaoc" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço esquerdo costas->	
-		<input id="bbraco" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço direito costas->
-		<input id="bracod" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço direito frente->
-		<input id="bracoe" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço esquerdo frente->
-		<input id="centrof" type="checkbox" position="absolute" value=18 oninput="executar()"/> <!– Centro frente->
-		<input id="centroc" type="checkbox" position="absolute" value=18 oninput="executar()"/> <!– Centro costas->
-		<input id="pernaec" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna esquerda costas->
-		<input id="pernadc" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna direita costas->
-		<input id="pernaef" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna esquerda frente->
-		<input id="pernadf" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna direita frente->
-		<input id="cabecac" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Cabeça costas->
-		<input id="cabecaf" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Cabeça frente->
-		<input id="perineo" type="checkbox" position="absolute" value=1 oninput="executar()"/> <!– Períneo->
+		<input id="botaoc" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo costas->	
+		<input id="bbraco" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito costas->
+		<input id="bracod" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito frente->
+		<input id="bracoe" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo frente->
+		<input id="centrof" type="checkbox" value=18 oninput="executar()"/> <!– Centro frente->
+		<input id="centroc" type="checkbox" value=18 oninput="executar()"/> <!– Centro costas->
+		<input id="pernaec" type="checkbox" value=9 oninput="executar()"/> <!– Perna esquerda costas->
+		<input id="pernadc" type="checkbox" value=9 oninput="executar()"/> <!– Perna direita costas->
+		<input id="pernaef" type="checkbox" value=9 oninput="executar()"/> <!– Perna esquerda frente->
+		<input id="pernadf" type="checkbox" value=9 oninput="executar()"/> <!– Perna direita frente->
+		<input id="cabecac" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça costas->
+		<input id="cabecaf" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça frente->
+		<input id="perineo" type="checkbox" value=1 oninput="executar()"/> <!– Períneo->
 		
-		<div id="divo" ><strong>&nbsp;&nbsp;&nbsp;INSTRUÇÕES</strong> </br></div>
+		
 		
 		<p id="vivo"><input id="oi" type="text" value="Preencha os campos acima!" readonly></input></p>
 		<input id="visor" type="text" value="%" readonly ></input>
