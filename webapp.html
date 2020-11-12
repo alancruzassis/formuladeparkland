@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<title>Parkland</title>
+	<style>
+		h1 {
+			font-family: Segoe UI light;
+			font-size: 35pt;
+			color: white;
+			position:relative;
+			left:100px;
+			top:0px;
+			
+		}
+		h2 {
+			font-family: Arial;
+			font-size: 12pt;
+			color: #d6e6f7;
+			position:absolute;
+			left: 110px;
+			top: 88px;
+			
+			
+			}
+		p#pri {
+			font-family: arial;
+			font-size: 14pt;
+			color: white;
+			position:relative;
+			left:11px;
+			width: 100%;
+		'	height:50%;
+		}
+		p#pri2 {
+			font-family: arial;
+			font-size: 14pt;
+			color: white;
+			position:relative;
+			left:11px;
+			width: 100%;
+		'	height:50%;
+
+		}
+		
+		fieldset#campo {
+			font-family: Arial;
+			font-size: 14pt;
+			color: white;
+			position:relative;
+			left:11px;
+			height: 140px;
+		}
+		
+		fieldset#campo2 {
+			font-family: Arial;
+			font-size: 14pt;
+			color: white;
+			position:absolute;
+			left:0px;
+			top: 190px;
+			height: 160px;
+			width: 240px;
+			
+		}
+		
+		img#img1{
+			position: absolute;
+			top:10px
+		}
+		img#scqi{
+			position: absolute;
+			top:165px;
+			left:400px;
+			opacity:0.9;
+		}
+		
+		body{
+		background-color: #f94c3e;
+		}
+			
+		p#conjuntocaixa{
+		position:relative;
+		width: 70%;
+		height:70px;
+		top:151px;
+		left:25%;
+		text-align:center;
+		
+		
+		background-color:#f9ef23;
+		color:#32620e;
+		font:bold 11pt Arial;
+		}
+		
+				
+		p#copyright{
+		font: normal 8pt Arial;
+		color:ffbd59;
+		text-align:center;
+				}
+		
+		form#fCalculo{
+		width: 280px;
+		height:110px;
+		
+		}
+		
+		
+		
+		
+		}
+				
+		input#cVolp{
+		position: absolute;
+		width: 50%;
+		height:100%;
+		}
+		input#cConcp{
+		position: absolute;
+		width: 50%;
+		height:100%;
+		}
+		
+		input#botaoc{
+		position: absolute;
+		left: 389px;
+		top: -30px;
+		}
+		input#bbraco{
+		position: absolute;
+		left: 488px;
+		top: -30px;
+		}
+		input#bracod{
+		position: absolute;
+		left: 547px;
+		top: -30px;
+		}
+		input#bracoe{
+		position: absolute;
+		left: 647px;
+		top: -30px;
+		}
+		input#centrof{
+		position: absolute;
+		left: 600px;
+		top: -35px;
+		}
+		input#centroc{
+		position: absolute;
+		left: 439px;
+		top: -46px;
+		}
+		input#pernaec{
+		position: absolute;
+		left: 422px;
+		top: 60px;
+		}
+		input#pernadc{
+		position: absolute;
+		left: 456px;
+		top: 60px;
+		}
+		input#pernaef{
+		position: absolute;
+		left: 616px;
+		top: 60px;
+		}
+		input#pernadf{
+		position: absolute;
+		left: 583px;
+		top: 60px;
+		}
+		input#cabecac{
+		position: absolute;
+		left: 438px;
+		top: -142px;
+		}
+		input#cabecaf{
+		position: absolute;
+		left: 600px;
+		top: -138px;
+		}
+		input#perineo{
+		position: absolute;
+		left: 599px;
+		top: 15px;
+		}
+		
+		div#divo{
+		font-family: Arial;
+			font-size: 12pt;
+			color: #ed1a20;
+			position:absolute;
+			left:0px;
+			top: 200px;
+			height: 61px;
+			width: 700px;
+			background-color:#fff432;
+			line-height:59px;
+			
+		}
+		
+		input#oi{
+		font-family: Verdana;
+			font-size: 11pt;
+			color: white;
+			position:absolute;
+			left:0px;
+			top: 200px;
+			height: 55px;
+			width: 900px;
+			background-color:#f29d12;
+			border-color: orange;
+			text-align: center;
+		}
+		
+		input#visor{
+		font-family: Arial;
+			font-size: 9pt;
+			position:absolute;
+			left:504px;
+			top: -150px;
+			height: 12px;
+			width: 40px;
+			text-align:center;
+			background-color:#0174ff;
+			color: white;
+			border-color: #0174ff;
+		}
+		input#visorp{
+		font-family: Arial;
+			font-size: 9pt;
+			position:absolute;
+			left: 212px;
+			top: 16px;
+			height: 15px;
+			width: 40px;
+			text-align:center;
+			background-color:#0174ff;
+			color: white;
+			border-color: #0174ff;
+		}
+		
+		p#parag{
+		font-size: 9pt;
+		position:absolute;
+		left:704px;
+		top: -150px;
+		width: 400px;
+		height: 100px;
+		color: #d9d9d9
+		}
+		p#para{
+		font-size: 9pt;
+		position:absolute;
+		left:704px;
+		top: -90px;
+		width: 400px;
+		height: 100px;
+		
+		}
+		a{
+		color: #5ce1e6;
+		}
+		
+		div#fundo{
+		position: absolute;
+		top:
+		width: 314px;
+		height: 358px;
+		top: 165px;
+		left:400px;
+		background-color: orange;
+		color: orange;
+		
+		}
+		
+	</style>
+	
+	
+	
+</head>
+<body>
+
+<script>
+window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e concorda com os TERMOS E CONDIÇÕES DE USO (disponíveis no nosso site), que atende aos pré-requisitos neles dispostos e que cumprirá os termos neles acordados. Caso você não concorde (ou não puder cumprir) com os acordos você deve sair da página e não poderá ter acesso ao conteúdo.")
+</script>
+	<hgroup>
+	<h1>FÓRMULA DE PARKLAND</h1> 
+	<h2>Estabilização hemodinâmica do paciente adulto/idoso queimado</h2>
+	
+	</hgroup>
+	<div id="fundo" >1010101010101000110111100110000001100111</div>
+	<img id="img1" src="logo.png"
+	alt="Logotipo"
+	width="100px"
+	text-align:right
+	padding:30pt
+	>
+	
+	<img id= "scqi" src="scq.png"
+	alt="Mapa da Superfície Corporal"
+	width="314px" 
+	
+	>
+	
+	<br/>
+		<form method="get" id="fCalculo" oninput="executar()">
+			<fieldset id="campo"><legend>DADOS</legend>
+			<p id="pri"><label for="cVolp">Peso(Kg): </label><input type="number" oninput="executar()" name="tVolp" id="cVolp" min="0" max="900" placeholder="Ex: 70" ></p>
+			<p id="pri2"><label for="cConcp">SCQ(%): </label><input  type="number" value=0 oninput="executar()" name="tConcp" id="cConcp" min="0" max="100"placeholder="Coloque 0 aqui" ></p>
+			<input id="qele" type="checkbox" position="relative" value=2 /><label for="qele">Queimadura Elétrica</label> <!– Queimadura elétrica->
+			
+			
+			
+			<fieldset id="campo2" ><legend>ESTIMANDO PESO*</legend>
+			<p id="pri3"><label for="idade">Idade: </label><input type="number" id="idade" min="18" max="300" placeholder="Ex: 58"></p>
+			<p id="pri4"><label for="kh">Altura do Joelho(cm)<span style="text-decoration: underline;"><a href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
+			
+			
+			<input id="sexf" name="sexo" type="radio" value="20" /> <label for="sexf">Feminino</label><!– Sexo->
+			<input id="sexm" name="sexo" type="radio" value="21" /> <label for="sexm">Masculino</label><!– Sexo->
+			
+		</form>	
+			
+			<br>
+			
+			
+		<input id="botaoc" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço esquerdo costas->	
+		<input id="bbraco" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço direito costas->
+		<input id="bracod" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço direito frente->
+		<input id="bracoe" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Braço esquerdo frente->
+		<input id="centrof" type="checkbox" position="absolute" value=18 oninput="executar()"/> <!– Centro frente->
+		<input id="centroc" type="checkbox" position="absolute" value=18 oninput="executar()"/> <!– Centro costas->
+		<input id="pernaec" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna esquerda costas->
+		<input id="pernadc" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna direita costas->
+		<input id="pernaef" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna esquerda frente->
+		<input id="pernadf" type="checkbox" position="absolute" value=9 oninput="executar()"/> <!– Perna direita frente->
+		<input id="cabecac" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Cabeça costas->
+		<input id="cabecaf" type="checkbox" position="absolute" value=4.5 oninput="executar()"/> <!– Cabeça frente->
+		<input id="perineo" type="checkbox" position="absolute" value=1 oninput="executar()"/> <!– Períneo->
+		
+		<div id="divo" ><strong>&nbsp;&nbsp;&nbsp;INSTRUÇÕES</strong> </br></div>
+		
+		<p id="vivo"><input id="oi" type="text" value="Preencha os campos acima!" readonly></input></p>
+		<input id="visor" type="text" value="%" readonly ></input>
+		<input id="visorp" type="text" value="Kg" readonly ></input>
+		
+	<script>
+		function executar(){
+		var peso = parseFloat(window.document.getElementById('cVolp').value)//Peso
+		var scq = parseFloat(window.document.getElementById('cConcp').value)//SCQ
+		var qele = 1//Queimadura ele. x2
+		
+		var idade = parseFloat(window.document.getElementById('idade').value)//Idade
+		var kh = parseFloat(window.document.getElementById('kh').value)//Altura do Joelho
+			
+		var a = window.document.getElementById('oi')
+		var cConcp = window.document.getElementById('visor')
+		
+		
+		
+		if (document.getElementById('qele').checked){//centro f
+		qele = parseFloat(document.getElementById('qele').value)
+		}
+		
+		
+		var sexo = document.getElementsByName("sexo");
+		
+		
+				
+		if(sexo[1].checked){
+		bx = parseFloat(((22*((64.19-(0.04*idade)+(2.02*kh))/100)**2)*2*soma*qele).toFixed(2))//x
+		window.document.getElementById('visorp').value= ((22*((64.19-(0.04*idade)+(2.02*kh))/100)**2).toFixed(2))
+		}
+		
+		else if(sexo[0].checked){
+		bx = parseFloat(((21*((84.88-(0.24*idade)+(1.83*kh))/100)**2)*2*soma*qele).toFixed(2))//x
+		window.document.getElementById('visorp').value= parseFloat((21*((84.88-(0.24*idade)+(1.83*kh))/100)**2).toFixed(1))
+		}
+		
+		b = parseFloat(((centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo+scq)*peso*2*qele).toFixed(2));
+		
+		
+		
+		centroc =0
+		centrof =0
+		botaoc =0
+		bbraco =0
+		bracod =0
+		bracoe =0
+		pernaec =0
+		pernaef =0
+		pernadc =0
+		pernadf =0
+		cabecaf =0
+		cabecac =0
+		perineo =0
+		if (document.getElementById('centroc').checked){//centro c
+		centroc = parseFloat(document.getElementById('centroc').value)
+		}
+		if (document.getElementById('centrof').checked){//centro f
+		centrof = parseFloat(document.getElementById('centrof').value)
+		}
+		if (document.getElementById('botaoc').checked){//braço esquerdo c
+		botaoc = parseFloat(document.getElementById('botaoc').value)
+		}
+		if (document.getElementById('bbraco').checked){//braço direito c
+		bbraco = parseFloat(document.getElementById('bbraco').value)
+		}
+		if (document.getElementById('bracod').checked){//braço direito f
+		bracod = parseFloat(document.getElementById('bracod').value)
+		}
+		if (document.getElementById('bracoe').checked){//braço esquerdo f
+		bracoe = parseFloat(document.getElementById('bracoe').value)
+		}
+		if (document.getElementById('pernaec').checked){//perna esquerda c
+		pernaec = parseFloat(document.getElementById('pernaec').value)
+		}
+		if (document.getElementById('pernaef').checked){//perna esquerda f
+		pernaef = parseFloat(document.getElementById('pernaef').value)
+		}
+		if (document.getElementById('pernadc').checked){//perna direita c
+		pernadc = parseFloat(document.getElementById('pernadc').value)
+		}
+		if (document.getElementById('pernadf').checked){//perna direita f
+		pernadf = parseFloat(document.getElementById('pernadf').value)
+		}
+		if (document.getElementById('cabecac').checked){//cabeça f
+		cabecac = parseFloat(document.getElementById('cabecac').value)
+		}
+		if (document.getElementById('cabecaf').checked){//cabeça f
+		cabecaf = parseFloat(document.getElementById('cabecaf').value)
+		}
+		if (document.getElementById('perineo').checked){//cabeça f
+		perineo = parseFloat(document.getElementById('perineo').value)
+		}
+		
+		h8 = Math.ceil((b/2)/(3*8))
+		h16 = Math.ceil((b/2)/(3*16))
+		
+		if(peso>0){
+		peso=window.document.getElementById('cVolp').value
+		}		
+		if (scq>0){//centro f
+		soma = window.document.getElementById('cConcp').value
+				
+		}else{
+		
+		soma = centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo
+		
+		}
+		a.value = `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
+		visor.value = soma
+		//a.value = `Peso SCQ ${scq}% Queimadura ${qele} Idade ${idade} KH ${kh}`
+		
+		}
+	
+		
+		
+	
+	</script>
+	
+	
+		
+		
+	
+<br/><br/><br/><br/>	
+<p id="parag"><i>Obs.: Considere '.' (ponto) como ',' (vírgula) e vice-versa.<br>*Peso ideal estimado (segundo IMC: M-22 F-21kg/m^2 e<br/> Altura estimada pela altura do joelho [equações de <span style="text-decoration: underline;"><a href="https://doi.org/10.1590/1415-52732015000500002">Chumlea et al.</a></span>]).</i></br>Considere SCQ como a área com queimaduras de 2º e 3º grau.</p>
+<p id="para">Saiba mais no <span style="text-decoration: underline;"><a href="https://alamgenio.wixsite.com/transformsolucoes">nosso site</a></span>.<br/><br/><span style="text-decoration: underline;"><a href="https://docs.google.com/document/d/1NCzTmn_h8QuXoxb92N4vS5gw59E-TyBdiO1QA2tPOR0/edit?usp=sharing">TERMOS E CONDIÇÕES DE USO</a></span><br/><br/> <span style="text-decoration: underline;"><a href="https://docs.google.com/document/d/1iI6UCnor8Y0ILnkrFAWIf-getFaS0s24SSf10bLaJYA/edit?usp=sharing">REFERÊNCIAS</a></span></p>
+
+<p id="copyright">&nbsp;©2020 por UNEB - Todos os direitos reservados.</p>
+
+
+
+	
+		  
+	
+	
+			
+	
+</body>
+</html>
