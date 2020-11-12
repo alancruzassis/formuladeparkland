@@ -72,9 +72,19 @@
 		}
 		img#scqi{
 			position: absolute;
-			top:145px;
+			top:148px;
 			left:400px;
 			opacity:0.9;
+		}
+		
+		div#fundo{
+		position: absolute;
+		width: 314px;
+		height: 358px;
+		top: 148px;
+		left:400px;
+		background-color: orange;
+		color: orange;
 		}
 		
 		body{
@@ -109,7 +119,11 @@
 		}
 		
 		
-		
+		form#quadrados{
+		position: absolute;
+		top: 2px;
+		left: -0px;
+		}
 		
 				
 		input#cVolp{
@@ -126,22 +140,22 @@
 		input#botaoc{
 		position: absolute;
 		left: 389px;
-		top: -30px;
+		top: -28px;
 		}
 		input#bbraco{
 		position: absolute;
 		left: 488px;
-		top: -30px;
+		top: -28px;
 		}
 		input#bracod{
 		position: absolute;
 		left: 547px;
-		top: -30px;
+		top: -28px;
 		}
 		input#bracoe{
 		position: absolute;
 		left: 647px;
-		top: -30px;
+		top: -28px;
 		}
 		input#centrof{
 		position: absolute;
@@ -254,15 +268,7 @@
 		color: #5ce1e6;
 		}
 		
-		div#fundo{
-		position: absolute;
-		width: 314px;
-		height: 358px;
-		top: 145px;
-		left:400px;
-		background-color: orange;
-		color: orange;
-		}
+		
 		
 		input#idade{
 		width: 120px;
@@ -324,7 +330,8 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 			
 			<br>
 			
-			
+		
+		<form id="quadrados"> 	
 		<input id="botaoc" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo costas->	
 		<input id="bbraco" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito costas->
 		<input id="bracod" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito frente->
@@ -338,7 +345,7 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 		<input id="cabecac" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça costas->
 		<input id="cabecaf" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça frente->
 		<input id="perineo" type="checkbox" value=1 oninput="executar()"/> <!– Períneo->
-		
+		</form>	
 		
 		
 		<p id="vivo"><input id="oi" type="text" value="Preencha os campos acima!" readonly></input></p>
