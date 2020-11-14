@@ -297,12 +297,12 @@
 		
 		input#visor{
 		font-family: Arial;
-			font-size: 13pt;
+			font-size: 16pt;
 			position:absolute;
-			left:590px;
+			left:580px;
 			top: -140px;
-			height: 16px;
-			width: 47px;
+			height: 43px;
+			width: 65px;
 			text-align:center;
 			background-color:#0174ff;
 			color: white;
@@ -341,8 +341,11 @@
 		}
 		
 		
-			
-				
+		
+		
+		
+		
+		
 		
 	</style>
 	
@@ -522,15 +525,17 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 		peso=window.document.getElementById('cVolp').value
 		}		
 		if (scq>0){//centro f
-		soma = window.document.getElementById('cConcp').value
-				
+		//soma = parseFloat(window.document.getElementById('cConcp').value)
+		
+		visor.value = scq + centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo 
 		}else{
 		
 		soma = centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo
-		
+		visor.value = soma
 		}
 		a.value = `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
-		visor.value = soma
+		
+		
 		novooi.value= `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
 		//a.value = `Peso SCQ ${scq}% Queimadura ${qele} Idade ${idade} KH ${kh}`
 		
