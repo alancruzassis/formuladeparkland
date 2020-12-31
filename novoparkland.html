@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<title>Parkland</title>
+	<style>
+	* {
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color: #f1f1f1;}
+	
+	html{height:100%;}
+		body{height:100%;}
+		.geral{
+			min-height:100%;
+			position:relative;
+			width:100%;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		
+		h1 {
+			font-family: Arial;
+			font-size: 60px;
+			color: #ff1616;
+			position:absolute;
+			left:130px;
+			top: 20px;
+			
+		}
+		h2 {
+			font-family: Helvetica;
+			font-size: 14pt;
+			color: #F9943B;
+			position:absolute;
+			left: 130px;
+			top: 85px;
+			
+			}
+			
+		.cabecalho{
+		display: flex;
+		background-color: #FAF9F9;
+		flex-direction: column;
+		height: 137px;
+		justify-content: space-around;
+		margin-top: 0px;
+		margin-bottom: 7px;
+		}
+		
+		.form{
+		width: 95%;
+		background-color: #f94c3e;
+		height: 200px;
+		margin: 10px:
+		border-radius: 25px;
+		max-width: 900px;
+		}
+		
+		.fieldset{
+		background-color: #f94c3e;
+		width: 50%;
+		float: left;
+		height: 199px;
+		padding: 5px;
+		box-sizing: border-box;
+		margin: 10px:
+		border-radius: 25px;
+		}
+		
+		.fieldset2{
+		background-color: #f94c3e;
+		width: 50%;
+		height: 199px;
+		float: right;
+		padding: 5px;
+		box-sizing: border-box;
+		margin: 10px:
+		border-radius: 25px;
+		}
+		
+		/* 
+		form#fCalculo2{
+		width: 50%;
+		height: 100px;
+		font-family: arial;
+		font-size: 19px;
+		float: right;
+		}
+		
+		form#fCalculo{
+		width: 50%;
+		height: 100px;
+		font-family: arial;
+		font-size: 19px;
+		float: left;
+		}
+		
+		*/
+		
+		fieldset#campo{
+		font-family: arial;
+		font-size: 22pt;
+		padding: 10px;
+		height: 160px;
+		border-color: white;
+		color: white;
+		border-radius: 25px;
+		}
+		
+		fieldset#campo2{
+		font-family: arial;
+		font-size: 22pt;
+		padding: 10px;
+		height: 160px;
+		border-color: white;
+		color: white;
+		border-radius: 25px;
+		}
+		
+		img#logo{
+		position: absolute;
+		top: 6px;
+		}
+		
+		img#scqi{
+		border-radius: 25px;
+		}
+		
+		
+		.flex-box {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+		
+		p{
+		line-height: 40px;
+		}
+		
+		input#visorp{
+		z-index: 9;
+		float: right;
+		position: relative;
+		font-family: Arial;
+			font-size: 12pt;
+			height: 35px;
+			width: 80px;
+			text-align:center;
+			background-color:#0174ff;
+			color: white;
+			border-color: #0174ff;
+			top: -120px;
+			right: 25px;
+			border-radius: 5px;
+		}
+		
+		
+		input#cVolp{
+		text-align: center;
+		width: 120px;
+		height:30px;
+		font-size: 18pt;
+		margin-top: 5px;
+		border-radius: 10px;
+		}
+		
+		input#cConcp{
+		text-align: center;
+		width: 120px;
+		height:30px;
+		font-size: 18pt;
+		margin-top: 5px;
+		border-radius: 10px;
+		}
+		
+		input#qele{
+		margin-top: 2px;
+		margin-right: 17px;
+		margin-left: 10px;
+		transform: scale(2);
+		}
+		
+		#qele2{
+		display: inline-block;
+		margin-top: 10px;
+		}
+		
+		input#idade{
+		text-align: center;
+		width: 120px;
+		height:30px;
+		font-size: 18pt;
+		margin-top: 5px;
+		border-radius: 10px;
+		}
+		
+		input#kh{
+		text-align: center;
+		width: 110px;
+		height:30px;
+		font-size: 18pt;
+		margin-top: 5px;
+		margin-left: 3px;
+		border-radius: 10px;
+		}
+		
+		.sexo{
+		transform: scale(2);
+		margin-left: 5px;
+		}
+		
+		.allInputs{
+		transform: scale(2.5);
+		}
+		
+		input#visor{
+			font-family: Arial;
+			font-size: 20pt;
+			left:420px;
+			top: 420px;
+			height: 43px;
+			width: 65px;
+			text-align:center;
+			background-color:#0174ff;
+			color: white;
+			border-color: #0174ff;
+			border-radius: 5px;
+		}
+		
+		input#botaoc{
+		position: relative;
+		left: -125px;
+		top: 210px;
+		}
+		
+		input#bbraco{
+		position: relative;
+		left: -10px;
+		top: 210px;
+		}
+		input#bracod{
+		position: relative;
+		left: 86px;
+		top: 210px;
+		}
+		input#bracoe{
+		position: relative;
+		left: 205px;
+		top: 210px;
+		}
+		/*
+		input#centrof{
+		position: absolute;
+		left: 764px;
+		top: -35px;
+		}
+		input#centroc{
+		position: absolute;
+		left: 460px;
+		top: -46px;
+		}
+		
+		input#pernaec{
+		position: absolute;
+		left: 430px;
+		top: 290px;
+		transform: scale(2.5);
+		}
+		input#pernadc{
+		position: absolute;
+		left: 490px;
+		top: 290px;
+		transform: scale(2.5);
+		}
+		input#pernaef{
+		position: absolute;
+		left: 790px;
+		top: 290px;
+		transform: scale(2.5);
+		}
+		input#pernadf{
+		position: absolute;
+		left: 730px;
+		top: 290px;
+		transform: scale(2.5);
+		}
+		input#cabecac{
+		position: relative;
+		left: 268px;
+		top: 60px;
+		}
+		input#cabecaf{
+		position: absolute;
+		left: 759px;
+		top: -160px;
+		transform: scale(2.5);
+		}
+		input#perineo{
+		position: absolute;
+		left: 762px;
+		top: 150px;
+		transform: scale(2.5);
+		}
+		*/
+		
+		.fieldquadrados{
+		border: none;
+		}
+		
+	</style>
+	
+		
+</head>
+<body>
+
+<script>
+window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e concorda com os TERMOS E CONDIÇÕES DE USO (disponíveis no nosso site), que atende aos pré-requisitos neles dispostos e que cumprirá os termos neles acordados. Caso você não concorde (ou não puder cumprir) com os acordos você deve sair da página e não poderá ter acesso ao conteúdo.")
+</script>
+	<div class="cabecalho">
+	<hgroup>
+	<h1><strong>FÓRMULA DE PARKLAND</strong></h1> 
+	<h2>Calculadora para estabilização hemodinâmica do paciente adulto/idoso queimado</h2>
+	</hgroup>
+	</div>
+	
+	<img id="logo" src="logou.png"
+	alt="Logotipo"
+	width="130px"
+	text-align:right
+	padding:30pt
+	>
+	
+	
+	
+	<br/>
+	<div class="flex-box container-box">
+	<div class="form">
+		<form method="get" id="fCalculo" oninput="executar()">
+			<div class="fieldset">
+				<fieldset id="campo"><legend><strong>DADOS</strong></legend>
+				<p id="pri"><label for="cVolp">Peso(Kg): </label><input type="number" oninput="executar()" name="tVolp" id="cVolp" min="0" max="900" placeholder="Ex: 70" ></p>
+				<p id="pri2"><label for="cConcp">SCQ(%): </label><input  type="number" value=0 oninput="executar()" name="tConcp" id="cConcp" min="0" max="100"placeholder="Coloque 0 aqui" ></p>
+				<input id="qele" type="checkbox" value=2 /><label id="qele2" for="qele">Queimadura Elétrica</label> <!– Queimadura elétrica->
+				</fieldset>
+			</div>
+			<div class="fieldset2">	
+				<fieldset id="campo2" ><legend><strong>ESTIMANDO PESO*</strong></legend>
+					<p id="pri3"><label for="idade">Idade: </label><input type="number" id="idade" min="18" max="300" placeholder="Ex: 58"></p>
+					<p id="pri4"><label for="kh">Altura Joelho(cm)<span><a href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
+					
+					<input id="sexf" class="sexo" name="sexo" type="radio" value="20" /> <label for="sexf">Feminino</label><!– Sexo->
+					<input id="sexm" class="sexo" name="sexo" type="radio" value="21" /> <label for="sexm">Masculino</label><!– Sexo->
+					</br>
+					<div class="visorp">
+						<input id="visorp" type="text" value="Kg" readonly ></input>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+		
+	</div>
+	</div>
+	<div class="grupo"> <!–Imagem + Botões input->
+	<div class="quadrados">
+	<form id="quadrados"> 	
+	<div class="flex-box container-box">
+		<fieldset class="fieldquadrados">
+		<input id="visor"  type="text" value="%" readonly ></input>
+		
+		<input id="botaoc" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo costas->	
+		<input id="bbraco" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito costas->
+		<input id="bracod" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito frente->
+		<input id="bracoe" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo frente->
+		<input id="centrof" class="allInputs" type="checkbox" value=18 oninput="executar()"/> <!– Centro frente->
+		<input id="centroc" class="allInputs" type="checkbox" value=18 oninput="executar()"/> <!– Centro costas->
+		<input id="pernaec" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna esquerda costas->
+		<input id="pernadc" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna direita costas->
+		<input id="pernaef" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna esquerda frente->
+		<input id="pernadf" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna direita frente->
+		<input id="cabecac" class="allInputs" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça costas->
+		<input id="cabecaf" class="allInputs" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça frente->
+		<input id="perineo" class="allInputs" type="checkbox" value=1 oninput="executar()"/> <!– Períneo->
+		</fieldset>
+	</div>
+		
+		</form>	
+	
+	
+	</div>
+	<div class="flex-box container-box">
+	<img id= "scqi" src="scq.png"
+	alt="Mapa da Superfície Corporal"
+	>
+	</div>	
+	</div><!–Imagem + Botões input->
+	
+	<div class="visor">	
+	<p id="vivo"><input id="oi" type="text" value="Preencha os campos acima!" readonly></input></p>
+		<textarea id="novooi">Preencha os campos acima!</textarea>
+	</div>
+		
+	<script>
+		function executar(){
+		var peso = parseFloat(window.document.getElementById('cVolp').value)//Peso
+		var scq = parseFloat(window.document.getElementById('cConcp').value)//SCQ
+		var qele = 1//Queimadura ele. x2
+		
+		var idade = parseFloat(window.document.getElementById('idade').value)//Idade
+		var kh = parseFloat(window.document.getElementById('kh').value)//Altura do Joelho
+			
+		var a = window.document.getElementById('oi')
+		var cConcp = window.document.getElementById('visor')
+		
+		
+		
+		if (document.getElementById('qele').checked){//centro f
+		qele = parseFloat(document.getElementById('qele').value)
+		}
+		
+		var visorp = window.document.getElementById('visorp')
+		var sexf = document.getElementById("sexf")
+		var sexm = document.getElementById("sexm")
+		var novooi = window.document.getElementById('novooi')
+		
+				
+		if(sexm.checked==true){
+		bx = parseFloat(((22*((64.19-(0.04*idade)+(2.02*kh))/100)**2)*2*soma*qele).toFixed(2))//x
+		visorp.value= ((22*((64.19-(0.04*idade)+(2.02*kh))/100)**2).toFixed(2))
+		}
+		else if(sexf.checked==true){
+		bx = parseFloat(((21*((84.88-(0.24*idade)+(1.83*kh))/100)**2)*2*soma*qele).toFixed(2))//x
+		visorp.value= parseFloat((21*((84.88-(0.24*idade)+(1.83*kh))/100)**2).toFixed(1))
+		}
+		
+		b = parseFloat(((centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo+scq)*peso*2*qele).toFixed(2));
+		
+		
+		
+		centroc =0
+		centrof =0
+		botaoc =0
+		bbraco =0
+		bracod =0
+		bracoe =0
+		pernaec =0
+		pernaef =0
+		pernadc =0
+		pernadf =0
+		cabecaf =0
+		cabecac =0
+		perineo =0
+		if (document.getElementById('centroc').checked){//centro c
+		centroc = parseFloat(document.getElementById('centroc').value)
+		}
+		if (document.getElementById('centrof').checked){//centro f
+		centrof = parseFloat(document.getElementById('centrof').value)
+		}
+		if (document.getElementById('botaoc').checked){//braço esquerdo c
+		botaoc = parseFloat(document.getElementById('botaoc').value)
+		}
+		if (document.getElementById('bbraco').checked){//braço direito c
+		bbraco = parseFloat(document.getElementById('bbraco').value)
+		}
+		if (document.getElementById('bracod').checked){//braço direito f
+		bracod = parseFloat(document.getElementById('bracod').value)
+		}
+		if (document.getElementById('bracoe').checked){//braço esquerdo f
+		bracoe = parseFloat(document.getElementById('bracoe').value)
+		}
+		if (document.getElementById('pernaec').checked){//perna esquerda c
+		pernaec = parseFloat(document.getElementById('pernaec').value)
+		}
+		if (document.getElementById('pernaef').checked){//perna esquerda f
+		pernaef = parseFloat(document.getElementById('pernaef').value)
+		}
+		if (document.getElementById('pernadc').checked){//perna direita c
+		pernadc = parseFloat(document.getElementById('pernadc').value)
+		}
+		if (document.getElementById('pernadf').checked){//perna direita f
+		pernadf = parseFloat(document.getElementById('pernadf').value)
+		}
+		if (document.getElementById('cabecac').checked){//cabeça f
+		cabecac = parseFloat(document.getElementById('cabecac').value)
+		}
+		if (document.getElementById('cabecaf').checked){//cabeça f
+		cabecaf = parseFloat(document.getElementById('cabecaf').value)
+		}
+		if (document.getElementById('perineo').checked){//cabeça f
+		perineo = parseFloat(document.getElementById('perineo').value)
+		}
+		
+		h8 = Math.ceil((b/2)/(3*8))
+		h16 = Math.ceil((b/2)/(3*16))
+		
+		if(peso>0){
+		peso=window.document.getElementById('cVolp').value
+		}		
+		if (scq>0){//centro f
+		//soma = parseFloat(window.document.getElementById('cConcp').value)
+		
+		visor.value = scq + centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo 
+		}else{
+		
+		soma = centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo
+		visor.value = soma
+		}
+		a.value = `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
+		
+		
+		novooi.value= `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
+		//a.value = `Peso SCQ ${scq}% Queimadura ${qele} Idade ${idade} KH ${kh}`
+		
+		}
+	
+		
+		
+	
+	</script>
+	
+	
+		
+		
+	
+<br/><br/><br/><br/>	
+<p id="parag"><i>Obs.: Considere '.' (ponto) como ',' (vírgula) e vice-versa.<br>*Peso ideal estimado (segundo IMC: M-22 F-21kg/m^2 e<br/> Altura estimada pela altura do joelho [equações de <span style="text-decoration: underline;"><a href="https://doi.org/10.1590/1415-52732015000500002">Chumlea et al.</a></span>]).</i></br>Considere SCQ como a área com queimaduras de 2º e 3º grau.</p>
+<p id="para">Saiba mais no <span style="text-decoration: underline;"><a href="https://alamgenio.wixsite.com/transformsolucoes">nosso site</a></span>.<br/><br/><span style="text-decoration: underline;"><a href="https://docs.google.com/document/d/1NCzTmn_h8QuXoxb92N4vS5gw59E-TyBdiO1QA2tPOR0/edit?usp=sharing">TERMOS E CONDIÇÕES DE USO</a></span><br/><br/> <span style="text-decoration: underline;"><a href="https://docs.google.com/document/d/1iI6UCnor8Y0ILnkrFAWIf-getFaS0s24SSf10bLaJYA/edit?usp=sharing">REFERÊNCIAS</a></span></p>
+
+<p id="copyright">&nbsp;©2020 por UNEB - Todos os direitos reservados.</p>
+
+
+
+	
+		  
+	
+				
+	
+</body>
+</html>
