@@ -234,13 +234,14 @@ body{background-color: #f1f1f1;}
 			font-size: 28pt;
 			left: 120px;
 			top: 100px;
-			height: 63px;
+			
 			width: 115px;
 			text-align:center;
 			background-color:#0174ff;
 			color: white;
 			border-color: #0174ff;
 			border-radius: 5px;
+			
 		}
 		
 		input#botaoc{
@@ -261,7 +262,7 @@ body{background-color: #f1f1f1;}
 		}
 		input#bracoe{
 		position: relative;
-		left: 308px;
+		left: 290px;
 		top: 298px;
 		}
 		
@@ -278,13 +279,13 @@ body{background-color: #f1f1f1;}
 		
 		input#pernaec{
 		position: relative;
-		left: -270px;
+		left: -280px;
 		top: 496px;
 		}
 		
 		input#pernadc{
 		position: relative;
-		left: -198px;
+		left: -208px;
 		top: 496px;
 		}
 		
@@ -295,7 +296,7 @@ body{background-color: #f1f1f1;}
 		}
 		input#pernadf{
 		position: relative;
-		left: 45px;
+		left: 25px;
 		top: 496px;
 		}
 		
@@ -312,7 +313,7 @@ body{background-color: #f1f1f1;}
 		
 		input#perineo{
 		position: relative;
-		left: 40px;
+		left: 20px;
 		top: 415px;
 		}
 		
@@ -369,6 +370,22 @@ body{background-color: #f1f1f1;}
 			
 		}
 		
+		input#submit{
+		font-family: Arial;
+		padding: 10px;
+		background-color: red;
+		color: white;
+		border-radius: 20px;
+		font-weight: bold;
+		width: 180px;
+		height: 80px;
+		font-size: 16pt;
+		box-shadow: 1px 1px 1px black;
+		position: relative;
+		top: -300px;
+		
+		}
+		
 	</style>
 	
 		
@@ -397,7 +414,7 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 	<br/>
 	<div class="flex-box container-box">
 	<div class="form">
-		<form method="get" id="fCalculo" oninput="executar()">
+		<form method="get" id="fCalculo" oninput="executar()" onchange="executar()" onclick="executar()">
 			<div class="fieldset">
 				<fieldset id="campo"><legend><strong>&nbsp;DADOS</strong></legend>
 				<p id="pri"><label for="cVolp">&nbsp;Peso(Kg): </label><input type="number" oninput="executar()" name="tVolp" id="cVolp" min="0" max="900" placeholder="Ex: 70" ></p>
@@ -424,7 +441,7 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 	</div>
 	<div class="grupo"> <!–Imagem + Botões input->
 	<div class="quadrados">
-	<form id="quadrados" oninput="executar()"> 	
+	<form id="quadrados" oninput="executar()" onclick="executar()" onchange="executar()"> 	
 	<div class="flex-box container-box">
 		<fieldset class="fieldquadrados">
 		<input id="visor"  type="text" value="%" readonly ></input>
@@ -463,6 +480,13 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 		<textarea id="novooi">^ PREENCHA OS CAMPOS ACIMA ^</textarea>
 	</div>
 	</div>	
+	
+	<div class="flex-box container-box">
+	<div>	
+		<input type="submit" id="submit" value="CALCULAR" oninput="executar()" onclick="executar()"></input>
+	</div>
+	</div>	
+	
 	
 	<script>
 		function executar(){
