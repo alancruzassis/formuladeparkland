@@ -190,7 +190,7 @@ body{background-color: #f1f1f1;}
 		input#qele{
 		margin-top: 2px;
 		margin-right: 17px;
-		margin-left: 10px;
+		margin-left: 15px;
 		transform: scale(2);
 		}
 		
@@ -229,12 +229,13 @@ body{background-color: #f1f1f1;}
 		}
 		
 		input#visor{
+			position:relative;
 			font-family: Arial;
-			font-size: 20pt;
-			left:420px;
-			top: 420px;
-			height: 43px;
-			width: 65px;
+			font-size: 28pt;
+			left: 120px;
+			top: 100px;
+			height: 63px;
+			width: 115px;
 			text-align:center;
 			background-color:#0174ff;
 			color: white;
@@ -244,7 +245,7 @@ body{background-color: #f1f1f1;}
 		
 		input#botaoc{
 		position: relative;
-		left: -207px;
+		left: -220px;
 		top: 298px;
 		}
 		
@@ -255,7 +256,7 @@ body{background-color: #f1f1f1;}
 		}
 		input#bracod{
 		position: relative;
-		left: 126px;
+		left: 106px;
 		top: 298px;
 		}
 		input#bracoe{
@@ -263,60 +264,59 @@ body{background-color: #f1f1f1;}
 		left: 308px;
 		top: 298px;
 		}
-		/*
+		
 		input#centrof{
-		position: absolute;
-		left: 245px;
-		top: -35px;
+		position: relative;
+		left: -185px;
+		top: 235px;
 		}
 		input#centroc{
-		position: absolute;
-		left: 460px;
-		top: -46px;
+		position: relative;
+		left: 160px;
+		top: 235px;
 		}
 		
 		input#pernaec{
-		position: absolute;
-		left: 430px;
-		top: 290px;
-		transform: scale(2.5);
+		position: relative;
+		left: -270px;
+		top: 496px;
 		}
+		
 		input#pernadc{
-		position: absolute;
-		left: 490px;
-		top: 290px;
-		transform: scale(2.5);
+		position: relative;
+		left: -198px;
+		top: 496px;
 		}
+		
 		input#pernaef{
-		position: absolute;
-		left: 790px;
-		top: 290px;
-		transform: scale(2.5);
+		position: relative;
+		left: 140px;
+		top: 496px;
 		}
 		input#pernadf{
-		position: absolute;
-		left: 730px;
-		top: 290px;
-		transform: scale(2.5);
+		position: relative;
+		left: 45px;
+		top: 496px;
 		}
+		
 		input#cabecac{
 		position: relative;
-		left: 268px;
-		top: 60px;
+		left: -300px;
+		top: 50px;
 		}
 		input#cabecaf{
-		position: absolute;
-		left: 759px;
-		top: -160px;
-		transform: scale(2.5);
+		position: relative;
+		left: 55px;
+		top: 50px;
 		}
+		
 		input#perineo{
-		position: absolute;
-		left: 762px;
-		top: 150px;
-		transform: scale(2.5);
+		position: relative;
+		left: 40px;
+		top: 415px;
 		}
-		*/
+		
+		/**/
 		
 		.fieldquadrados{
 		border: none;
@@ -340,6 +340,34 @@ body{background-color: #f1f1f1;}
 		margin:0px;
 		}
 		
+		textarea#novooi{
+			font-family: Verdana;
+			font-size: 22pt;
+			color: white;
+			position: absolute;
+			height: 105px;
+			width: 95%;
+			max-width: 900px;
+			background-color:#0174ff;
+			border-color: white;
+			border-radius: 10px;
+			text-align: center;
+			text-shadow: 0.5px 0.5px 0px black; 
+		}
+		
+		input#oi{
+		width: 400px;
+		display: none;
+		}
+		
+		.visor{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 150px;
+		width: 100%;
+			
+		}
 		
 	</style>
 	
@@ -371,19 +399,19 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 	<div class="form">
 		<form method="get" id="fCalculo" oninput="executar()">
 			<div class="fieldset">
-				<fieldset id="campo"><legend><strong>DADOS</strong></legend>
-				<p id="pri"><label for="cVolp">Peso(Kg): </label><input type="number" oninput="executar()" name="tVolp" id="cVolp" min="0" max="900" placeholder="Ex: 70" ></p>
-				<p id="pri2"><label for="cConcp">SCQ(%): </label><input  type="number" value=0 oninput="executar()" name="tConcp" id="cConcp" min="0" max="100"placeholder="Coloque 0 aqui" ></p>
+				<fieldset id="campo"><legend><strong>&nbsp;DADOS</strong></legend>
+				<p id="pri"><label for="cVolp">&nbsp;Peso(Kg): </label><input type="number" oninput="executar()" name="tVolp" id="cVolp" min="0" max="900" placeholder="Ex: 70" ></p>
+				<p id="pri2"><label for="cConcp">&nbsp;SCQ(%): </label><input  type="number" value=0 oninput="executar()" name="tConcp" id="cConcp" min="0" max="100"placeholder="Coloque 0 aqui" ></p>
 				<input id="qele" type="checkbox" value=2 /><label id="qele2" for="qele">Queimadura Elétrica</label> <!– Queimadura elétrica->
 				</fieldset>
 			</div>
 			<div class="fieldset2">	
-				<fieldset id="campo2" ><legend><strong>ESTIMANDO PESO*</strong></legend>
+				<fieldset id="campo2" ><legend><strong>&nbsp;ESTIMANDO PESO*</strong></legend>
 					<p id="pri3"><label for="idade">Idade: </label><input type="number" id="idade" min="18" max="300" placeholder="Ex: 58"></p>
 					<p id="pri4"><label for="kh">Altura Joelho(cm)<span><a href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
 					
-					<input id="sexf" class="sexo" name="sexo" type="radio" value="20" /> <label for="sexf">Feminino</label><!– Sexo->
-					<input id="sexm" class="sexo" name="sexo" type="radio" value="21" /> <label for="sexm">Masculino</label><!– Sexo->
+					<input id="sexf" class="sexo" name="sexo" type="radio" value="20" oninput="executar()" onclick="executar()"/> <label for="sexf">Feminino</label><!– Sexo->
+					<input id="sexm" class="sexo" name="sexo" type="radio" value="21" oninput="executar()" onclick="executar()"/> <label for="sexm">Masculino</label><!– Sexo->
 					</br>
 					<div class="visorp">
 						<input id="visorp" type="text" value="Kg" readonly ></input>
@@ -401,19 +429,19 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 		<fieldset class="fieldquadrados">
 		<input id="visor"  type="text" value="%" readonly ></input>
 		
-		<input id="botaoc" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo costas->	
-		<input id="bbraco" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito costas->
-		<input id="bracod" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço direito frente->
-		<input id="bracoe" class="allInputs" type="checkbox"  value=4.5 oninput="executar()"/> <!– Braço esquerdo frente->
-		<input id="centrof" class="allInputs" type="checkbox" value=18 oninput="executar()"/> <!– Centro frente->
-		<input id="centroc" class="allInputs" type="checkbox" value=18 oninput="executar()"/> <!– Centro costas->
-		<input id="pernaec" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna esquerda costas->
-		<input id="pernadc" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna direita costas->
-		<input id="pernaef" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna esquerda frente->
-		<input id="pernadf" class="allInputs" type="checkbox" value=9 oninput="executar()"/> <!– Perna direita frente->
-		<input id="cabecac" class="allInputs" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça costas->
-		<input id="cabecaf" class="allInputs" type="checkbox" value=4.5 oninput="executar()"/> <!– Cabeça frente->
-		<input id="perineo" class="allInputs" type="checkbox" value=1 oninput="executar()"/> <!– Períneo->
+		<input id="botaoc" class="allInputs" type="checkbox"  value=4.5 oninput="executar()" onclick="executar()"/> <!– Braço esquerdo costas->	
+		<input id="bbraco" class="allInputs" type="checkbox"  value=4.5 oninput="executar()" onclick="executar()"/> <!– Braço direito costas->
+		<input id="bracod" class="allInputs" type="checkbox"  value=4.5 oninput="executar()" onclick="executar()"/> <!– Braço direito frente->
+		<input id="bracoe" class="allInputs" type="checkbox"  value=4.5 oninput="executar()" onclick="executar()"/> <!– Braço esquerdo frente->
+		<input id="centrof" class="allInputs" type="checkbox" value=18 oninput="executar()" onclick="executar()"/> <!– Centro frente->
+		<input id="centroc" class="allInputs" type="checkbox" value=18 oninput="executar()" onclick="executar()"/> <!– Centro costas->
+		<input id="pernaec" class="allInputs" type="checkbox" value=9 oninput="executar()" onclick="executar()"/> <!– Perna esquerda costas->
+		<input id="pernadc" class="allInputs" type="checkbox" value=9 oninput="executar()" onclick="executar()"/> <!– Perna direita costas->
+		<input id="pernaef" class="allInputs" type="checkbox" value=9 oninput="executar()" onclick="executar()"/> <!– Perna esquerda frente->
+		<input id="pernadf" class="allInputs" type="checkbox" value=9 oninput="executar()" onclick="executar()"/> <!– Perna direita frente->
+		<input id="cabecac" class="allInputs" type="checkbox" value=4.5 oninput="executar()" onclick="executar()"/> <!– Cabeça costas->
+		<input id="cabecaf" class="allInputs" type="checkbox" value=4.5 oninput="executar()" onclick="executar()"/> <!– Cabeça frente->
+		<input id="perineo" class="allInputs" type="checkbox" value=1 oninput="executar()" onclick="executar()"/> <!– Períneo->
 		</fieldset>
 	</div>
 		
@@ -427,12 +455,15 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 	>
 	</div>	
 	</div><!–Imagem + Botões input->
-	
-	<div class="visor">	
 	<p id="vivo"><input id="oi" type="text" value="Preencha os campos acima!" readonly></input></p>
-		<textarea id="novooi">Preencha os campos acima!</textarea>
+	
+	<div class="flex-box container-box">
+	<div class="visor">	
+	
+		<textarea id="novooi">^ PREENCHA OS CAMPOS ACIMA ^</textarea>
 	</div>
-		
+	</div>	
+	
 	<script>
 		function executar(){
 		var peso = parseFloat(window.document.getElementById('cVolp').value)//Peso
