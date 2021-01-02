@@ -148,6 +148,7 @@ body{background-color: #f1f1f1;}
 		
 		p{
 		line-height: 40px;
+		font-family: arial;
 		}
 		
 		input#visorp{
@@ -346,7 +347,7 @@ body{background-color: #f1f1f1;}
 			font-size: 22pt;
 			color: white;
 			position: absolute;
-			height: 105px;
+			height: 125px;
 			width: 95%;
 			max-width: 900px;
 			background-color:#0174ff;
@@ -386,6 +387,63 @@ body{background-color: #f1f1f1;}
 		
 		}
 		
+		a{
+		font-family: Arial;
+		text-decoration: none;
+		font-size: 16px;
+		color:  #2c5fac;
+		background-color: white;
+		padding: 19px 27px;
+		border-style: solid;
+		border-width: 2px;
+		border-top-color: #337FED;
+		border-right-color: #337FED;
+		border-bottom-color: #337FED;
+		border-left-color: #337FED;
+		border-radius: 29px;
+		margin-right: 15px;
+		cursor: pointer;
+		}
+		
+		footer{
+			position: absolute;
+			font-family: Arial;
+			font-size: 1em;
+			text-shadow: 0.5px 0.5px 0.5px black;
+			text-align: center;
+			width:100%;
+			left: 0px;
+			background-color: #27314D;
+			font-weight: bold;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			margin: 0;
+			border: 0;
+			color: white;
+		}
+		
+		#lastupdated{
+		font-family: Sans-serif;
+		color: gray;
+		font-size: 0.8em;
+		}
+		
+		#chumlea{
+		padding: 9px 17px;
+		margin-right: 1px;
+		}
+		
+		.obs{
+		margin-left: 10px;
+		}
+		
+		a#aj{
+		padding: 0px;
+		margin-right: 1px;
+		background-color: #27314D;
+		border: none;
+		color: red;
+		}
 	</style>
 	
 		
@@ -425,7 +483,7 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 			<div class="fieldset2">	
 				<fieldset id="campo2" ><legend><strong>&nbsp;ESTIMANDO PESO*</strong></legend>
 					<p id="pri3"><label for="idade">Idade: </label><input type="number" id="idade" min="18" max="300" placeholder="Ex: 58"></p>
-					<p id="pri4"><label for="kh">Altura Joelho(cm)<span><a href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
+					<p id="pri4"><label for="kh">Altura Joelho(cm)<span><a id="aj" href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
 					
 					<input id="sexf" class="sexo" name="sexo" type="radio" value="20" oninput="executar()" onclick="executar()"/> <label for="sexf">Feminino</label><!– Sexo->
 					<input id="sexm" class="sexo" name="sexo" type="radio" value="21" oninput="executar()" onclick="executar()"/> <label for="sexm">Masculino</label><!– Sexo->
@@ -597,6 +655,7 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 		
 		
 		novooi.value= `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
+		
 		//a.value = `Peso SCQ ${scq}% Queimadura ${qele} Idade ${idade} KH ${kh}`
 		
 		}
@@ -610,16 +669,21 @@ window.alert("Ao fechar este aviso você atesta para os devidos fins que leu e c
 		
 		
 	
-<br/><br/><br/><br/>	
-<p id="parag"><i>Obs.: Considere '.' (ponto) como ',' (vírgula) e vice-versa.<br>*Peso ideal estimado (segundo IMC: M-22 F-21kg/m^2 e<br/> Altura estimada pela altura do joelho [equações de <span style="text-decoration: underline;"><a href="https://doi.org/10.1590/1415-52732015000500002">Chumlea et al.</a></span>]).</i></br>Considere SCQ como a área com queimaduras de 2º e 3º grau.</p>
-<p id="para">Saiba mais no <span style="text-decoration: underline;"><a href="https://alamgenio.wixsite.com/transformsolucoes">nosso site</a></span>.<br/><br/><span style="text-decoration: underline;"><a href="https://docs.google.com/document/d/1NCzTmn_h8QuXoxb92N4vS5gw59E-TyBdiO1QA2tPOR0/edit?usp=sharing">TERMOS E CONDIÇÕES DE USO</a></span><br/><br/> <span style="text-decoration: underline;"><a href="https://docs.google.com/document/d/1iI6UCnor8Y0ILnkrFAWIf-getFaS0s24SSf10bLaJYA/edit?usp=sharing">REFERÊNCIAS</a></span></p>
+<br/><br/><br/><br/>
+<div class="obs">	
+<p id="parag"><i><strong>Obs.:</strong> Considere '.' (ponto) como ',' (vírgula) e vice-versa.<br>*Peso ideal estimado (segundo IMC: M-22 F-21kg/m^2 e<br/> Altura estimada pela altura do joelho [equações de <span><a id="chumlea" href="https://doi.org/10.1590/1415-52732015000500002">Chumlea et al.</a></span>]).</i></br>Considere SCQ como a área com queimaduras de 2º e 3º grau.</p></br>
+<p id="para"><span><a href="https://alamgenio.wixsite.com/transformsolucoes">WEB SITE</a></span><span><a href="https://docs.google.com/document/d/1NCzTmn_h8QuXoxb92N4vS5gw59E-TyBdiO1QA2tPOR0/edit?usp=sharing">TERMOS E CONDIÇÕES DE USO</a></span><span><a href="https://docs.google.com/document/d/1iI6UCnor8Y0ILnkrFAWIf-getFaS0s24SSf10bLaJYA/edit?usp=sharing">REFERÊNCIAS</a></span></p></br>
 
-<p id="copyright">&nbsp;©2020 por UNEB - Todos os direitos reservados.</p>
+<p id="lastupdated">&nbsp;Última atualização em: 02/01/2021</p>
+<div>
 
 
-
+<footer>
 	
-		  
+	<p id="copyright">© Copyright 2020 - 2021 UNEB - Todos os direitos reservados.</p>
+	
+</footer>
+  
 	
 				
 	
