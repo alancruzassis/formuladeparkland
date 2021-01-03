@@ -4,6 +4,124 @@
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 	<title>Parkland</title>
+	<script>
+		function executar(){
+		var peso = parseFloat(window.document.getElementById('cVolp').value)//Peso
+		var scq = parseFloat(window.document.getElementById('cConcp').value)//SCQ
+		var qele = 1//Queimadura ele. x2
+		
+		var idade = parseFloat(window.document.getElementById('idade').value)//Idade
+		var kh = parseFloat(window.document.getElementById('kh').value)//Altura do Joelho
+			
+		var a = window.document.getElementById('oi')
+		var cConcp = window.document.getElementById('visor')
+		
+		
+		
+		if (document.getElementById('qele').checked){//centro f
+		qele = parseFloat(document.getElementById('qele').value)
+		}
+		
+		var visorp = window.document.getElementById('visorp')
+		var sexf = document.getElementById("sexf")
+		var sexm = document.getElementById("sexm")
+		var novooi = window.document.getElementById('novooi')
+		
+				
+		if(sexm.checked==true){
+		bx = parseFloat(((22*((64.19-(0.04*idade)+(2.02*kh))/100)**2)*2*soma*qele).toFixed(2))//x
+		visorp.value= ((22*((64.19-(0.04*idade)+(2.02*kh))/100)**2).toFixed(2))
+		}
+		else if(sexf.checked==true){
+		bx = parseFloat(((21*((84.88-(0.24*idade)+(1.83*kh))/100)**2)*2*soma*qele).toFixed(2))//x
+		visorp.value= parseFloat((21*((84.88-(0.24*idade)+(1.83*kh))/100)**2).toFixed(1))
+		}
+		
+		b = parseFloat(((centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo+scq)*peso*2*qele).toFixed(2));
+		
+		
+		
+		centroc =0
+		centrof =0
+		botaoc =0
+		bbraco =0
+		bracod =0
+		bracoe =0
+		pernaec =0
+		pernaef =0
+		pernadc =0
+		pernadf =0
+		cabecaf =0
+		cabecac =0
+		perineo =0
+		if (document.getElementById('centroc').checked){//centro c
+		centroc = parseFloat(document.getElementById('centroc').value)
+		}
+		if (document.getElementById('centrof').checked){//centro f
+		centrof = parseFloat(document.getElementById('centrof').value)
+		}
+		if (document.getElementById('botaoc').checked){//braço esquerdo c
+		botaoc = parseFloat(document.getElementById('botaoc').value)
+		}
+		if (document.getElementById('bbraco').checked){//braço direito c
+		bbraco = parseFloat(document.getElementById('bbraco').value)
+		}
+		if (document.getElementById('bracod').checked){//braço direito f
+		bracod = parseFloat(document.getElementById('bracod').value)
+		}
+		if (document.getElementById('bracoe').checked){//braço esquerdo f
+		bracoe = parseFloat(document.getElementById('bracoe').value)
+		}
+		if (document.getElementById('pernaec').checked){//perna esquerda c
+		pernaec = parseFloat(document.getElementById('pernaec').value)
+		}
+		if (document.getElementById('pernaef').checked){//perna esquerda f
+		pernaef = parseFloat(document.getElementById('pernaef').value)
+		}
+		if (document.getElementById('pernadc').checked){//perna direita c
+		pernadc = parseFloat(document.getElementById('pernadc').value)
+		}
+		if (document.getElementById('pernadf').checked){//perna direita f
+		pernadf = parseFloat(document.getElementById('pernadf').value)
+		}
+		if (document.getElementById('cabecac').checked){//cabeça f
+		cabecac = parseFloat(document.getElementById('cabecac').value)
+		}
+		if (document.getElementById('cabecaf').checked){//cabeça f
+		cabecaf = parseFloat(document.getElementById('cabecaf').value)
+		}
+		if (document.getElementById('perineo').checked){//cabeça f
+		perineo = parseFloat(document.getElementById('perineo').value)
+		}
+		
+		h8 = Math.ceil((b/2)/(3*8))
+		h16 = Math.ceil((b/2)/(3*16))
+		
+		if(peso>0){
+		peso=window.document.getElementById('cVolp').value
+		}		
+		if (scq>0){//centro f
+		//soma = parseFloat(window.document.getElementById('cConcp').value)
+		
+		visor.value = scq + centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo 
+		}else{
+		
+		soma = centroc+centrof+botaoc+bbraco+bracod+bracoe+pernaec+pernaef+pernadc+pernadf+cabecac+cabecaf+perineo
+		visor.value = soma
+		}
+		a.value = `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
+		
+		
+		novooi.value= `Infundir ${b}mL de solução cristaloide em 24h: ${b/2}mL em 8h (${h8}gts/min) e ${b/2}mL em 16h (${h16}gts/min).`
+		
+		//a.value = `Peso SCQ ${scq}% Queimadura ${qele} Idade ${idade} KH ${kh}`
+		
+		}
+	
+		
+		
+	
+	</script>
 	<style>
 	* {
     margin: 0;
@@ -33,7 +151,7 @@ body{background-color: #f1f1f1;}
 			
 		}
 		h2 {
-			font-family: Helvetica;
+			Font-family: Segoe UI, Optima, Arial, sans-serif;
 			font-size: 17pt;
 			color: #A5E8D3;
 			position:absolute;
@@ -423,7 +541,7 @@ body{background-color: #f1f1f1;}
 		}
 		
 		#lastupdated{
-		font-family: Sans-serif;
+		font-family: Consolas, arial;
 		color: gray;
 		font-size: 0.8em;
 		}
@@ -482,8 +600,8 @@ window.alert("BEM-VINDO(A)! Ao fechar este aviso você atesta para os devidos fi
 			</div>
 			<div class="fieldset2">	
 				<fieldset id="campo2" ><legend><strong>&nbsp;ESTIMANDO PESO*</strong></legend>
-					<p id="pri3"><label for="idade">Idade: </label><input type="number" id="idade" min="18" max="300" placeholder="Ex: 58"></p>
-					<p id="pri4"><label for="kh">Altura Joelho(cm)<span><a id="aj" href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
+					<p id="pri3"><label for="idade">&nbsp;Idade: </label><input type="number" id="idade" min="18" max="300" placeholder="Ex: 58"></p>
+					<p id="pri4"><label for="kh">&nbsp;Altura Joelho(cm)<span><a id="aj" href="https://docs.google.com/presentation/d/1N3Nyc-BjS1owTiemRnxYY_SovouBQ5CZGzYiika8aTg/edit?usp=sharing:"><sup>i</sup></a></span>:</label><input type="number" id="kh" min="0" max="120"placeholder="Ex: 51.5" ></p>
 					
 					<input id="sexf" class="sexo" name="sexo" type="radio" value="20" oninput="executar()" onclick="executar()"/> <label for="sexf">Feminino</label><!– Sexo->
 					<input id="sexm" class="sexo" name="sexo" type="radio" value="21" oninput="executar()" onclick="executar()"/> <label for="sexm">Masculino</label><!– Sexo->
