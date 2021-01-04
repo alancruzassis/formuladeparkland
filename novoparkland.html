@@ -262,6 +262,7 @@ body{background-color: #f1f1f1;}
 		  display: flex;
 		  align-items: center;
 		  justify-content: center;
+		 
 		}
 		
 		p{
@@ -562,6 +563,10 @@ body{background-color: #f1f1f1;}
 		border: none;
 		color: red;
 		}
+		
+		#flexform{
+		 margin-bottom: -20px;
+		 }
 	</style>
 	
 		
@@ -569,7 +574,7 @@ body{background-color: #f1f1f1;}
 <body>
 
 <script>
-window.alert("BEM-VINDO(A)! Ao fechar este aviso você atesta para os devidos fins que leu e concorda com os TERMOS E CONDIÇÕES DE USO (disponíveis no nosso site), que atende aos pré-requisitos neles dispostos e que cumprirá os termos neles acordados. Caso você não concorde (ou não puder cumprir) com os acordos você deve sair da página e não poderá ter acesso ao conteúdo.")
+window.alert("BEM-VINDO(A)!\n\nAo fechar este aviso você atesta para os devidos fins que leu e concorda com os TERMOS E CONDIÇÕES DE USO (disponíveis no nosso site), que atende aos pré-requisitos neles dispostos e que cumprirá os termos neles acordados e que aceita os cookies deste site. Caso você não concorde (ou não puder cumprir) com os acordos você deve sair da página e não poderá ter acesso ao conteúdo.")
 </script>
 	<div class="cabecalho">
 	<hgroup>
@@ -588,9 +593,9 @@ window.alert("BEM-VINDO(A)! Ao fechar este aviso você atesta para os devidos fi
 	
 	
 	<br/>
-	<div class="flex-box container-box">
+	<div class="flex-box container-box" id="flexform">
 	<div class="form">
-		<form method="get" id="fCalculo" oninput="executar()" onchange="executar()" onclick="executar()">
+		<form method="get" id="fCalculo" oninput="executar()" onchange="executar()" >
 			<div class="fieldset">
 				<fieldset id="campo"><legend><strong>&nbsp;DADOS</strong></legend>
 				<p id="pri"><label for="cVolp">&nbsp;Peso(Kg): </label><input type="number" oninput="executar()" name="tVolp" id="cVolp" min="0" max="900" placeholder="Ex: 70" ></p>
@@ -647,7 +652,7 @@ window.alert("BEM-VINDO(A)! Ao fechar este aviso você atesta para os devidos fi
 	alt="Mapa da Superfície Corporal"
 	>
 	</div>	
-	</div><!–Imagem + Botões input->
+	</div><!–GRUPO Imagem + Botões input->
 	<p id="vivo"><input id="oi" type="text" value="Preencha os campos acima!" readonly></input></p>
 	
 	<div class="flex-box container-box">
